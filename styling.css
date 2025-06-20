@@ -1,0 +1,129 @@
+body {
+    background-image: url(lenny_fitness.png)
+    height: 2556px;
+    width:  1179px;
+    }
+    
+    
+.splitSection {
+display: flex;
+gap: 0px;
+padding-top: 1080px;
+margin-left: 95px;
+gap: 286px;
+}
+
+.splitSection.left {
+flex: 1; 
+box-sizing: border-box;
+
+}
+
+.splitSection.right  {
+flex: 1; 
+box-sizing: border-box;
+
+}
+
+.unten {
+margin-left: 95px; 
+margin-top: 140px;
+}
+
+ /* Define the blinking animation */
+ @keyframes blink {
+    0%, 33.33% { 
+        visibility: visible; /* 1 Sekunde sichtbar */
+    }
+    33.34%, 66.66% { 
+        visibility: hidden; /* 1 Sekunde unsichtbar */
+    }
+    
+}
+
+/* Apply the blinking animation to the button */
+button {
+    /* padding: 10px 20px;
+    font-size: 16px;
+    background-color: #51da94; 
+    color: #047830;
+    border: none;
+    cursor: pointer;
+    animation: blink 1.5s infinite; /* 2/3 seconds for one cycle (0.33 sec visible + 0.33 sec invisible) */
+
+}
+
+img {
+    animation: blink 1.6s infinite;
+    margin-top: 5px;
+    padding-bottom: 63px;
+}
+
+
+p {
+font-size: 45px;
+color: #ffffff; 
+font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 500;
+font-style: normal;
+padding: 0px; 
+margin: 0px; 
+
+}
+
+h1 {
+    font-family: "liberation-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 33px;
+    color: #ffffff; 
+    letter-spacing: 1.5px;
+    padding: 0px; 
+    margin: 0px;
+}
+
+h2 {
+    font-size: 43px;
+    color: #ffffff; 
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0px; 
+    margin: 0px;
+    letter-spacing: 0.7px;
+
+    margin-top: 5px; 
+
+}
+
+h3 {
+    font-family: "liberation-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #ffffff; 
+    padding: 0px; 
+    margin: 0px;
+    margin-top: 6px;
+}
+
+h4 {
+    font-size: 45px;
+    color: #ffffff; 
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0px; 
+    margin: 0px; 
+    letter-spacing: 4px;
+}
+
+
+.name {
+padding-top: 5px; 
+}
+
+.datum {
+padding-top: 70px; 
+}
+
