@@ -20,58 +20,55 @@
 
 </head>
 
+<body class="checkin-body">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="back-arrow">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </div>
+        <h1 class="navbar-title">Check-in</h1>
+        <div class="navbar-spacer"></div>
+    </nav>
 
-<body>
-<section class="splitSection">
-    <div class="left">
-        <h1>Mitglied</h1>
-        <p class="name">Lenny Wener</p>
-        <h1 class="datum">Datum</h1>
-        <h4 id="current-date" class="name"></h4> 
-        <script>
-            // Get the current date
-            const today = new Date();
-    
-            // Extract the year and get the last two digits
-            const year = today.getFullYear().toString().slice(-2);  // This gives the last 2 digits of the year (e.g., "24")
-    
-            // Get the month and day
-            const month = today.getMonth() + 1; // Months are 0-indexed (0 = January, 1 = February, etc.)
-            const day = today.getDate();
-    
-            // Format the date as "DD/MM/YY"
-            const formattedDate = `${day < 10 ? '0' + day : day}.${month < 10 ? '0' + month : month}.${year}`;
-    
-            // Display the current date in the HTML element with id "current-date"
-            document.getElementById('current-date').textContent = formattedDate;
-        </script>
-        
+    <!-- Main Content -->
+    <div class="checkin-container">
+        <!-- Success Message -->
+        <h2 class="success-message">Check-in erfolgreich</h2>
+
+        <!-- Profile Image with Pulse -->
+        <div class="image-container">
+            <img class="partner-image" src="Unbenannt-4.png" alt="Profile">
+        </div>
+
+        <!-- Name -->
+        <h3 class="member-name">Marlon Horn</h3>
+
+        <!-- Location -->
+        <p class="location">Fitness First München - Am Marienplatz</p>
+
+        <!-- Date and Time -->
+        <div class="datetime-container">
+            <p class="current-date" id="current-date"></p>
+            <p class="current-time"><span id="clock"></span></p>
+        </div>
     </div>
-    
-    <div class="right">
-        <h1>Status</h1>
-        <img id="blink" src="buttonblinker.jpg" style="width: 300px;">
-        <h1 class="zeit">Zeit</h1>
-        <h4 class="name"><span id="clock"></span></h4>
 
-        <p class="current-time"></p>
+    <!-- EGYM Wellpass Logo -->
+    <div class="logo-container">
+        <img class="egym-logo" src="EGYM-Wellpass_Logo_Black_noBG_20250801.png" alt="EGYM Wellpass">
     </div>
-</section>
 
-<section class="unten">
-<div>
-<h1>Netzwerkpartner</h1>
-<h2>Fitness First Schwabing</h2>
-<h3>Kaufingerstraße 17,  80331, München</h3>
-</div>
-</section>
+    <!-- Date Script -->
+    <script>
+        // Get the current date
+        const today = new Date();
+        const year = today.getFullYear().toString().slice(-2);
+        const month = today.getMonth() + 1;
+        const day = today.getDate();
+        const formattedDate = `${day < 10 ? '0' + day : day}.${month < 10 ? '0' + month : month}.${year}`;
+        document.getElementById('current-date').textContent = formattedDate;
+    </script>
 
 </body>
-
-
-<script>
- /* var video = document.getElementById("myVideo");
-video.addEventListener("click", function() {
- video.requestFullscreen();
-});        
-</script>
